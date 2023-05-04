@@ -1,0 +1,18 @@
+#include <iostream>
+#include <windows.h>
+using namespace std;
+
+int main() {
+    int minutes = 0;
+    int count = 0;
+    while (true) {
+        cout << "Count: " << count << " | Minutes: " << minutes << endl;
+        count++;
+        if (count % 10 == 0) {
+            minutes++;
+        }
+        // Wait for 1 second before continuing
+        Sleep(1000); // 1000 milliseconds = 1 second
+    }
+    return 0;
+}
